@@ -1,0 +1,141 @@
+.section {
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  text-align: center;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: left;
+}
+
+.hero-greeting {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #4ecdc4;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.wave-emoji {
+  font-size: 2.5rem;
+  display: inline-block;
+  transform-origin: 70% 70%;
+}
+
+.hero-name {
+  font-size: 2rem;
+  margin: 0;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.hero-role {
+  font-size: 2rem;
+  opacity: 0.8;
+  margin: 0;
+  color: #666;
+}
+
+.portfolio.dark .hero-role {
+  color: #ccc;
+}
+
+.hero-gif {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-gif-image {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+.about {
+  background: rgba(255, 255, 255, 0.05);
+  margin: 2rem 0;
+  border-radius: 20px;
+  padding: 3rem;
+  backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.about-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(78, 205, 196, 0.3);
+  justify-self: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.download-resume {
+  background: #4666ff;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.download-resume:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+}

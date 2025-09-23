@@ -28,6 +28,14 @@ const Projects = () => {
                 viewport={{ once: true }}
               >
                 <h3>{project.title}</h3>
+                <div className="project-image-container">
+                  <img
+                    src={project.img}
+                    alt={project.title}
+                    className="project-image"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="description">{project.description}</div>
                 <div className="tech-stack">
                   {project.techStack.map((tech, i) => (

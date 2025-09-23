@@ -26,6 +26,14 @@ const Certifications = () => {
                 viewport={{ once: true }}
               >
                 <h3>{cert.title}</h3>
+                <div className="certification-image-container">
+                  <img
+                    src={cert.img}
+                    alt={cert.title}
+                    className="certification-image"
+                    loading="lazy"
+                  />
+                </div>
                 <div className="institution">{cert.institution}</div>
                 <div className="date">{cert.date}</div>
                 <div className="description">{cert.description}</div>

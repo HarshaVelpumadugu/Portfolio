@@ -37,8 +37,47 @@
 
 .card h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: #4666ff;
+}
+
+/* Project Image Styles */
+.project-image-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
+}
+
+/* Fallback for broken images */
+.project-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(70, 102, 255, 0.1),
+    rgba(135, 206, 250, 0.1)
+  );
+  z-index: -1;
 }
 
 .card .company,
@@ -57,6 +96,7 @@
 .card .description {
   line-height: 1.6;
   opacity: 0.9;
+  margin-bottom: 1rem;
 }
 
 .card .tech-stack {

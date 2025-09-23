@@ -1,6 +1,12 @@
+import PostmanBadge from "../../assets/Postman-Badge.png";
+import SQLCertificate from "../../assets/SQL-Certificate.png";
+import JavaCertificate from "../../assets/Java-Certificate.png";
+import DSACertificate from "../../assets/DSA-Certificate.png";
+
 export const certificationsData = [
   {
     title: "Postman API Fundamentals Student Expert Badge",
+    img: PostmanBadge,
     institution: "Postman",
     date: "May 2025",
     description:
@@ -8,6 +14,7 @@ export const certificationsData = [
   },
   {
     title: "Java (Basic)",
+    img: JavaCertificate,
     institution: "HackerRank",
     date: "Apr 2024",
     description:
@@ -15,6 +22,7 @@ export const certificationsData = [
   },
   {
     title: "SQL (Intermediate)",
+    img: SQLCertificate,
     institution: "HackerRank",
     date: "Jun 2024",
     description:
@@ -22,6 +30,7 @@ export const certificationsData = [
   },
   {
     title: "Data Structures & Algorithms",
+    img: DSACertificate,
     institution: "Smart Interviews",
     date: "Sep 2024",
     description:

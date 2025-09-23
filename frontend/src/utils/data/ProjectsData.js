@@ -1,6 +1,11 @@
+import QuickBidImg from "../../assets/QuickBid-img.png";
+import ChatAppImg from "../../assets/ChatApp-img.png";
+import PortfolioImg from "../../assets/portfolio-img.png";
+
 export const ProjectsData = [
   {
-    title: "QuickBid-An online Bidding Platform",
+    title: "QuickBid",
+    img: QuickBidImg,
     description:
       "QuickBid is a dynamic online Auction Platform where users can create and join live Auctions, place real-time bids, and effortlessly modify their auction items.",
     techStack: ["React", "Node.js", "MongoDB", "Express.js"],
@@ -10,6 +15,7 @@ export const ProjectsData = [
   },
   {
     title: "ChatApplication",
+    img: ChatAppImg,
     description:
       "Real Time Chat Application built with MERN Stack, featuring user Authentication with JWT, online Status indicators and Search Functionality. Socket.io is used for Real-Time Communication.",
     techStack: ["React", "Socket.io", "Express", "Node.js", "MongoDB"],
@@ -18,6 +24,7 @@ export const ProjectsData = [
   },
   {
     title: "Portfolio",
+    img: PortfolioImg,
     description:
       "A modern and interactive personal portfolio built with React and powered by Framer Motion for smooth, eye-catching animations. The portfolio showcases projects, skills, and experience with a clean and responsive layout. It includes a dark and light theme toggle for a personalized browsing experience, ensuring both accessibility and style.",
     techStack: ["React", "Framer-Motion"],

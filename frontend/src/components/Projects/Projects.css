@@ -41,15 +41,14 @@
   color: #4666ff;
 }
 
-/* Project Image Styles */
 .project-image-container {
   width: 100%;
   height: 200px;
   margin-bottom: 1rem;
   border-radius: 10px;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1); */
 }
 
 .project-image {

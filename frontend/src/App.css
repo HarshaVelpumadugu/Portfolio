@@ -114,6 +114,9 @@ body {
 }
 
 @media (max-width: 430px) {
+  .header {
+    padding: 1rem;
+  }
   .hero-container {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -130,10 +133,38 @@ body {
   .skill-card {
     padding: 1rem;
   }
+  .section {
+    padding: 2rem 0.5rem;
+  }
+  .section-content {
+    padding: 0rem;
+    padding-top: 1rem;
+  }
+  .certificate-card {
+    padding: 1rem;
+  }
+  .experience-card {
+    padding: 1rem;
+  }
+  .project-card {
+    padding: 1rem;
+  }
 }
 @media (max-width: 380px) {
   .skills-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(125px, 1fr));
     gap: 1rem;
+  }
+  .skill-card {
+    padding: 0.5rem;
+  }
+  .certificate-section-content {
+    padding: 1rem 0rem;
+  }
+  .project-section-content {
+    padding: 1rem 0rem;
+  }
+  .experience-section-content {
+    padding: 1rem 0rem;
   }
 }

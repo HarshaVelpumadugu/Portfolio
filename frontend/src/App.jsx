@@ -34,6 +34,7 @@ const Layout = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path="*" element={<Home />} />
         </Routes>
       </main>
 

@@ -11,21 +11,19 @@ const Projects = () => {
       <motion.div
         className="container"
         initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
       >
-        <div className="section-content">
+        <div className="project-section-content">
           <h2>Projects</h2>
-          <div className="cards-grid">
+          <div className="project-cards-grid">
             {ProjectsData.map((project, index) => (
               <motion.div
                 key={index}
-                className="card"
+                className="project-card"
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
               >
                 <h3>{project.title}</h3>
                 <div className="project-image-container">

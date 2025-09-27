@@ -1,4 +1,10 @@
 import { useState } from "react";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import Header from "./components/Header/Header.jsx";
 import Home from "./components/Home/Home.jsx";
 import Skills from "./components/skills/skills.jsx";
@@ -8,12 +14,11 @@ import Certifications from "./components/Certifications/Certifications.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
-const App = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+// Layout component to handle conditional footer rendering
+const Layout = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  const toggleTheme = () => setIsDarkMode(!isDarkMode);
   return (
     <div className={`portfolio ${isDarkMode ? "dark" : "light"}`}>
       <Header
@@ -24,15 +29,38 @@ const App = () => {
       />
 
       <main className="main-content">
-        <Home />
-        <Skills />
-        <Experience />
-        <Projects />
-        <Certifications />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/certifications" element={<Certifications />} />
+        </Routes>
       </main>
 
-      <Footer />
+      {/* Footer only shows on Home page */}
+      {isHomePage && <Footer />}
     </div>
   );
 };
+
+const App = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const toggleTheme = () => setIsDarkMode(!isDarkMode);
+
+  return (
+    <Router>
+      <Layout
+        isDarkMode={isDarkMode}
+        toggleTheme={toggleTheme}
+        isMenuOpen={isMenuOpen}
+        toggleMenu={toggleMenu}
+      />
+    </Router>
+  );
+};
+
 export default App;

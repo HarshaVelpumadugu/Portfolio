@@ -9,21 +9,19 @@ const Certifications = () => {
       <motion.div
         className="container"
         initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
       >
-        <div className="section-content">
+        <div className="certificate-section-content">
           <h2>Certifications</h2>
-          <div className="cards-grid">
+          <div className="certificate-cards-grid">
             {certificationsData.map((cert, index) => (
               <motion.div
                 key={index}
-                className="card"
+                className="certificate-card"
                 initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
               >
                 <h3>{cert.title}</h3>
                 <div className="certification-image-container">

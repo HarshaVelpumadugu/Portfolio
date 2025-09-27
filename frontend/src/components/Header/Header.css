@@ -32,11 +32,64 @@
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
-  /* background: linear-gradient(45deg, #ff6b6b, #4ecdc4); */
   background: #0070ff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-decoration: none;
+}
+
+/* Desktop Navigation */
+.desktop-nav {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+}
+
+.desktop-nav-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.desktop-nav-link:hover {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 107, 0.1),
+    rgba(78, 205, 196, 0.1)
+  );
+  transform: translateY(-2px);
+}
+
+.desktop-nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.desktop-nav-link:hover::after,
+.desktop-nav-link.active::after {
+  width: 80%;
+}
+
+.desktop-nav-link.active {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 107, 0.2),
+    rgba(78, 205, 196, 0.2)
+  );
+  font-weight: 600;
 }
 
 .nav-buttons {
@@ -60,6 +113,11 @@
 .menu-toggle:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: scale(1.1);
+}
+
+/* Hide menu toggle on desktop */
+.menu-toggle {
+  display: block;
 }
 
 .mobile-menu {
@@ -126,6 +184,16 @@
   transform: translateX(10px);
 }
 
+.nav-link.active {
+  background: linear-gradient(
+    45deg,
+    rgba(255, 107, 107, 0.2),
+    rgba(78, 205, 196, 0.2)
+  );
+  font-weight: 600;
+  border-left: 3px solid #0070ff;
+}
+
 .overlay {
   position: fixed;
   top: 0;
@@ -134,4 +202,34 @@
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   z-index: 999;
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+  .header-content {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .desktop-nav {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-content {
+    justify-content: space-between;
+  }
 }

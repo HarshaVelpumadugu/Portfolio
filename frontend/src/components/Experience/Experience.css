@@ -1,24 +1,24 @@
-.section-content {
+.experience-section-content {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   padding: 1rem;
   backdrop-filter: blur(10px);
 }
 
-.section-content h2 {
+.experience-section-content h2 {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   text-align: center;
 }
 
-.cards-grid {
+.experience-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
 
-.card {
+.experience-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border: 1px solid #87cefa;
@@ -30,36 +30,36 @@
   overflow: hidden;
 }
 
-.card:hover {
+.experience-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-.card h3 {
+.experience-card h3 {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
   color: #4666ff;
 }
 
-.card .company,
-.card .institution {
+.experience-card .company,
+.experience-card .institution {
   font-size: 1rem;
   opacity: 0.8;
   margin-bottom: 0.5rem;
 }
 
-.card .date {
+.experience-card .date {
   font-size: 0.9rem;
   opacity: 0.6;
   margin-bottom: 1rem;
 }
 
-.card .description {
+.experience-card .description {
   line-height: 1.6;
   opacity: 0.9;
 }
 
-.card .tech-stack {
+.experience-card .tech-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;

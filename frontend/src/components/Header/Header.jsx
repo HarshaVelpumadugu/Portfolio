@@ -1,17 +1,21 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, Sun, Moon, X } from "lucide-react";
 import "./Header.css";
 
 const Header = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
+  const location = useLocation();
+
   const navItems = [
-    "Home",
-    "About",
-    "Skills",
-    "Experience",
-    "Projects",
-    "Certifications",
+    { name: "Home", path: "/" },
+    { name: "Skills", path: "/skills" },
+    { name: "Experience", path: "/experience" },
+    { name: "Projects", path: "/projects" },
+    { name: "Certifications", path: "/certifications" },
   ];
+
+  const isActive = (path) => location.pathname === path;
 
   return (
     <>
@@ -22,7 +26,29 @@ const Header = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
         transition={{ duration: 0.6 }}
       >
         <div className="header-content">
-          <div className="logo">Harsha .</div>
+          <Link to="/" className="logo">
+            Harsha .
+          </Link>
+
+          {/* Desktop Navigation */}
+          <nav className="desktop-nav">
+            {navItems.map((item, index) => (
+              <motion.div key={item.name}>
+                <Link
+                  to={item.path}
+                  className={`desktop-nav-link ${
+                    isActive(item.path) ? "active" : ""
+                  }`}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  {item.name}
+                </Link>
+              </motion.div>
+            ))}
+          </nav>
+
           <div className="nav-buttons">
             <button className="theme-toggle" onClick={toggleTheme}>
               {isDarkMode ? <Sun size={24} /> : <Moon size={24} />}
@@ -53,24 +79,29 @@ const Header = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
               transition={{ type: "spring", damping: 20 }}
             >
               <div className="menu-header">
-                <div className="logo">Harsha.</div>
+                <Link to="/" className="logo">
+                  Harsha.
+                </Link>
                 <button className="close-menu" onClick={toggleMenu}>
                   <X size={24} />
                 </button>
               </div>
               <nav className="nav-links">
                 {navItems.map((item, index) => (
-                  <motion.a
-                    key={item}
-                    href={`#${item.toLowerCase()}`}
-                    className="nav-link"
-                    initial={{ x: 50, opacity: 0 }}
-                    animate={{ x: 0, opacity: 1 }}
-                    transition={{ delay: index * 0.1 }}
-                    onClick={toggleMenu}
-                  >
-                    {item}
-                  </motion.a>
+                  <motion.div key={item.name}>
+                    <Link
+                      to={item.path}
+                      className={`nav-link ${
+                        isActive(item.path) ? "active" : ""
+                      }`}
+                      initial={{ x: 50, opacity: 0 }}
+                      animate={{ x: 0, opacity: 1 }}
+                      transition={{ delay: index * 0.1 }}
+                      onClick={toggleMenu}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
                 ))}
               </nav>
             </motion.div>
@@ -80,4 +111,5 @@ const Header = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
     </>
   );
 };
+
 export default Header;

@@ -4,6 +4,9 @@
   text-align: center;
 }
 
+.container h2 {
+  font-family: Delius;
+}
 .contact-info {
   display: flex;
   justify-content: center;

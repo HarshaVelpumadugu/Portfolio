@@ -14,7 +14,6 @@ import Certifications from "./components/Certifications/Certifications.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
-// Layout component to handle conditional footer rendering
 const Layout = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
@@ -38,7 +37,6 @@ const Layout = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
         </Routes>
       </main>
 
-      {/* Footer only shows on Home page */}
       {isHomePage && <Footer />}
     </div>
   );

@@ -1,4 +1,10 @@
-.footer {
+.portfolio.light .footer {
+  background: rgba(133, 126, 126, 0.2);
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.portfolio.dark .footer {
   background: rgba(0, 0, 0, 0.5);
   padding: 3rem 2rem;
   text-align: center;

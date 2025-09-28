@@ -5,7 +5,7 @@ import DSACertificate from "../../assets/DSA-Certificate.png";
 
 export const certificationsData = [
   {
-    title: "Postman API Fundamentals Student Expert Badge",
+    title: "Postman API Fundamentals Badge",
     img: PostmanBadge,
     institution: "Postman",
     date: "May 2025",

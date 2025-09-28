@@ -29,10 +29,21 @@
   margin: 0 auto;
 }
 
-.logo {
+.portfolio.light .logo {
   font-size: 1.5rem;
   font-weight: bold;
   background: #0070ff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-decoration: none;
+  font-family: Delius;
+}
+
+.portfolio.dark .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: hsl(45, 100%, 72%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -52,6 +63,7 @@
   text-decoration: none;
   font-size: 1rem;
   font-weight: 400;
+  font-family: cursive;
   padding: 0.5rem 1rem;
   border-radius: 8px;
   transition: all 0.3s ease;
@@ -127,7 +139,7 @@
 }
 
 .portfolio.dark .mobile-menu {
-  background: #393838;
+  background: hsl(0, 0%, 7%);
   box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
 }
 
@@ -155,6 +167,7 @@
   color: #9ca3af;
   text-decoration: none;
   font-size: 1.1rem;
+  font-family: cursive;
   padding: 0.8rem 1rem;
   border-radius: 8px;
   transition: all 0.3s ease;

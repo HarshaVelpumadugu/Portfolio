@@ -1,5 +1,5 @@
 .project-section-content {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
   border-radius: 20px;
   padding: 1rem;
   backdrop-filter: blur(10px);
@@ -19,13 +19,21 @@
   margin-top: 2rem;
 }
 
-.project-card {
+.portfolio.light .project-card {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 2rem;
-  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   border: 1px solid #87cefa;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio.dark .project-card {
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -36,10 +44,18 @@
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
-.project-card h3 {
+.portfolio.light .project-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: #4666ff;
+  font-family: Delius;
+}
+
+.portfolio.dark .project-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: hsl(45, 54%, 58%);
+  font-family: Delius;
 }
 
 .project-image-container {

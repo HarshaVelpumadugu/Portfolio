@@ -4,6 +4,11 @@ import { certificationsData } from "../../utils/data/CertificationsData.js";
 import "./Certifications.css";
 
 const Certifications = () => {
+  const handleCertificateClick = (url) => {
+    if (url) {
+      window.open(url, "_blank", "noopener,noreferrer");
+    }
+  };
   return (
     <section id="certifications" className="section">
       <motion.div
@@ -24,7 +29,11 @@ const Certifications = () => {
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
                 <h3>{cert.title}</h3>
-                <div className="certification-image-container">
+                <div
+                  className="certification-image-container"
+                  onClick={() => handleCertificateClick(cert.url)}
+                  style={{ cursor: cert.url ? "pointer" : "default" }}
+                >
                   <img
                     src={cert.img}
                     alt={cert.title}

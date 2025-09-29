@@ -26,7 +26,7 @@ export const ProjectsData = [
     title: "Portfolio",
     img: PortfolioImg,
     description:
-      "A modern and interactive personal portfolio built with React and powered by Framer Motion for smooth, eye-catching animations. The portfolio showcases projects, skills, and experience with a clean and responsive layout. It includes a dark and light theme toggle for a personalized browsing experience, ensuring both accessibility and style.",
+      "A modern and interactive personal portfolio built with React and powered by Framer Motion for smooth, eye-catching animations. The portfolio showcases projects, skills, and experience with a clean and responsive layout",
     techStack: ["React", "Framer-Motion"],
     liveLink: "https://portfolio-6p91.onrender.com",
     githubLink: "https://github.com/HarshaVelpumadugu/Portfolio",

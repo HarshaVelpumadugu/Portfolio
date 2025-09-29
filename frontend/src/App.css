@@ -9,12 +9,28 @@ body {
 }
 
 .portfolio.light {
-  background: #ffffff;
+  /* background: #ffffff; */
+  background: #f8f8f8;
+  background-image: repeating-linear-gradient(
+    135deg,
+    #eaeaea88 0,
+    #eaeaea88 0.3rem,
+    #0000 2px,
+    #0000 10px
+  );
   color: #333;
 }
 
 .portfolio.dark {
-  background: hsl(0, 0%, 7%);
+  /* background: hsl(0, 0%, 7%); */
+  background: #1a1a1a;
+  background-image: repeating-linear-gradient(
+    135deg,
+    #2a2a2a88 0,
+    #2a2a2a88 0.3rem,
+    #0000 2px,
+    #0000 10px
+  );
   color: #fff;
 }
 

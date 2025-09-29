@@ -95,6 +95,14 @@
   align-items: center;
 }
 
+.portfolio.light .about:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio.dark .about:hover {
+  box-shadow: 0rem 0.1rem 2rem #55555588;
+}
+
 .about-image {
   width: 250px;
   height: 250px;
@@ -137,7 +145,12 @@
   gap: 0.5rem;
 }
 
-.download-resume:hover {
+.portfolio.light .download-resume:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio.dark .download-resume:hover {
+  transform: translateY(-3px);
+  box-shadow: 0rem 0.1rem 2rem #55555588;
 }

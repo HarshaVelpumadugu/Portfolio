@@ -38,9 +38,14 @@
   overflow: hidden;
 }
 
-.experience-card:hover {
+.portfolio.light .experience-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio.dark .experience-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0rem 0.1rem 2rem #55555588;
 }
 
 .portfolio.light .experience-card h3 {

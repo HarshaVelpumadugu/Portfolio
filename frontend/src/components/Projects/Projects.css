@@ -39,9 +39,14 @@
   overflow: hidden;
 }
 
-.project-card:hover {
+.portfolio.light .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio.dark .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0rem 0.1rem 2rem #55555588;
 }
 
 .portfolio.light .project-card h3 {
@@ -149,7 +154,12 @@
   gap: 0.5rem;
 }
 
-.project-link:hover {
+.portfolio.light .project-link:hover {
   transform: scale(1.02);
-  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio.dark .project-link:hover {
+  transform: scale(1.02);
+  box-shadow: 0rem 0.1rem 2rem #55555588;
 }

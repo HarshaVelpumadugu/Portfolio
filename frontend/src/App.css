@@ -129,6 +129,13 @@ body {
   }
 }
 
+@media (max-width: 450px) {
+  .section-content {
+    padding: 0rem;
+    padding-top: 1rem;
+  }
+}
+
 @media (max-width: 430px) {
   .header {
     padding: 1rem;
@@ -151,10 +158,6 @@ body {
   }
   .section {
     padding: 2rem 0.5rem;
-  }
-  .section-content {
-    padding: 0rem;
-    padding-top: 1rem;
   }
   .certificate-card {
     padding: 1rem;

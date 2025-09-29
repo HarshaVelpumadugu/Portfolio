@@ -19,8 +19,10 @@ const Footer = () => {
         <h2>Contact Me</h2>
         <div className="contact-info">
           <div className="contact-item">
-            <Mail size={20} />
-            <span>{ContactsData.email}</span>
+            <a href={`mailto:${ContactsData.email}`} className="contact-item">
+              <Mail size={20} />
+              <span>{ContactsData.email}</span>
+            </a>
           </div>
           <div className="contact-item">
             <Phone size={20} />

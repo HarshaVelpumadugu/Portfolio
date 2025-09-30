@@ -45,7 +45,7 @@ const Layout = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
 
 const App = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(true);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const toggleTheme = () => setIsDarkMode(!isDarkMode);

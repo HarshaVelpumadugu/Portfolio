@@ -108,8 +108,17 @@
   height: 250px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 10px 30px rgba(78, 205, 196, 0.3);
   justify-self: center;
+}
+
+.portfolio.light .about-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio.dark .about-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0rem 0.1rem 2rem #55555588;
 }
 
 .about-content {

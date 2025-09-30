@@ -15,12 +15,23 @@ import ProjectDetail from "./components/Projects/ProjectDetail.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 const Layout = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
   const location = useLocation();
   const isHomePage = location.pathname === "/";
 
   return (
     <div className={`portfolio ${isDarkMode ? "dark" : "light"}`}>
+      <ScrollToTop />
       <Header
         isDarkMode={isDarkMode}
         toggleTheme={toggleTheme}

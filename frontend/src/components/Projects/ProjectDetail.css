@@ -115,9 +115,9 @@
     font-size: 1.5rem;
   }
 
-  .project-detail-links {
+  /* .project-detail-links {
     flex-direction: column;
-  }
+  } */
 
   .project-detail-links .project-link {
     justify-content: center;

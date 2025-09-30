@@ -1,6 +1,5 @@
 .certificate-section-content {
   background: rgb(124 121 121 / 10%);
-  border-radius: 20px;
   padding: 1rem;
   backdrop-filter: blur(10px);
 }
@@ -23,7 +22,6 @@
 .portfolio.light .certificate-card {
   background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(10px);
-  border-radius: 15px;
   padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -33,7 +31,6 @@
 
 .portfolio.dark .certificate-card {
   backdrop-filter: blur(10px);
-  border-radius: 15px;
   padding: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
@@ -153,12 +150,6 @@
   opacity: 0.9;
 }
 
-/* Expanded state styles */
-.certificate-card.expanded {
-  /* Optional: Add styles for when card is expanded */
-}
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .certificate-cards-grid {
     grid-template-columns: 1fr;

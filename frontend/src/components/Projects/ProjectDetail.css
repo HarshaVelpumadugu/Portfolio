@@ -1,0 +1,126 @@
+.project-detail-section {
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 2px solid currentColor;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  color: inherit;
+}
+
+.back-button:hover {
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateX(-5px);
+}
+
+.project-detail-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-detail-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: Delius;
+}
+
+.project-detail-image-container {
+  width: 100%;
+  margin-bottom: 3rem;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.project-detail-description {
+  margin-bottom: 3rem;
+}
+
+.project-detail-description h2,
+.project-detail-tech h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.project-detail-description p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.project-detail-tech {
+  margin-bottom: 3rem;
+}
+
+.project-detail-tech .tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.project-detail-tech .tech-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.95rem;
+}
+
+.project-detail-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.project-detail-links .project-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #4666ff;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-detail-links .project-link:hover {
+  background: transparent;
+  border-color: currentColor;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .project-detail-title {
+    font-size: 2rem;
+  }
+
+  .project-detail-description h2,
+  .project-detail-tech h2 {
+    font-size: 1.5rem;
+  }
+
+  .project-detail-links {
+    flex-direction: column;
+  }
+
+  .project-detail-links .project-link {
+    justify-content: center;
+  }
+}

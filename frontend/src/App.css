@@ -165,9 +165,9 @@ body {
   .experience-card {
     padding: 1rem;
   }
-  .project-card {
+  /* .project-card {
     padding: 1rem;
-  }
+  } */
 }
 @media (max-width: 380px) {
   .skills-grid {

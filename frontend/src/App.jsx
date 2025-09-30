@@ -11,6 +11,7 @@ import Skills from "./components/skills/skills.jsx";
 import Experience from "./components/Experience/Experience.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Certifications from "./components/Certifications/Certifications.jsx";
+import ProjectDetail from "./components/Projects/ProjectDetail.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import "./App.css";
 
@@ -33,6 +34,7 @@ const Layout = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
           <Route path="/skills" element={<Skills />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDetail />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="*" element={<Home />} />
         </Routes>

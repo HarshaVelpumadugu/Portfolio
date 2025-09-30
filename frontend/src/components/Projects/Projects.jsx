@@ -1,11 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Code } from "lucide-react";
-import { FaGithub } from "react-icons/fa6";
+import { ExternalLink } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import { ProjectsData } from "../../utils/data/ProjectsData.js";
 import "./Projects.css";
 
 const Projects = () => {
+  const navigate = useNavigate();
+
+  const handleProjectClick = (index) => {
+    navigate(`/project/${index}`);
+  };
+
   return (
     <section id="projects" className="section">
       <motion.div
@@ -25,7 +31,16 @@ const Projects = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <h3>{project.title}</h3>
+                <div className="project-header">
+                  <h3>{project.title}</h3>
+                  <button
+                    className="project-details-icon"
+                    onClick={() => handleProjectClick(index)}
+                    aria-label="View project details"
+                  >
+                    <ExternalLink size={24} />
+                  </button>
+                </div>
                 <div className="project-image-container">
                   <img
                     src={project.img}
@@ -33,24 +48,6 @@ const Projects = () => {
                     className="project-image"
                     loading="lazy"
                   />
-                </div>
-                <div className="description">{project.description}</div>
-                <div className="tech-stack">
-                  {project.techStack.map((tech, i) => (
-                    <span key={i} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                <div className="project-links">
-                  <a href={project.liveLink} className="project-link">
-                    <Code size={16} />
-                    Live Demo
-                  </a>
-                  <a href={project.githubLink} className="project-link">
-                    <FaGithub size={16} />
-                    GitHub
-                  </a>
                 </div>
               </motion.div>
             ))}
@@ -60,4 +57,5 @@ const Projects = () => {
     </section>
   );
 };
+
 export default Projects;

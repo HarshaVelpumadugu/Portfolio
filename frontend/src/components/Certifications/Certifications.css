@@ -22,7 +22,7 @@
 .portfolio.light .certificate-card {
   background: rgba(255, 255, 255, 1);
   backdrop-filter: blur(10px);
-  padding: 1rem;
+  padding: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -31,7 +31,7 @@
 
 .portfolio.dark .certificate-card {
   backdrop-filter: blur(10px);
-  padding: 1rem;
+  padding: 0.5rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;

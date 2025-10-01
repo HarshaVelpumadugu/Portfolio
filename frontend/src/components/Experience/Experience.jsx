@@ -14,25 +14,39 @@ const Experience = () => {
       >
         <div className="experience-section-content">
           <h2>Experience</h2>
-          <div className="experience-cards-grid">
+
+          <div className="experience-timeline">
+            {/* Vertical Timeline Line */}
+            <div className="timeline-line"></div>
+
             {ExperienceData.map((exp, index) => (
               <motion.div
                 key={index}
-                className="experience-card"
+                className="timeline-item"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
               >
-                <h3>{exp.title}</h3>
-                <div className="company">{exp.company}</div>
-                <div className="date">{exp.date}</div>
-                <div className="description">{exp.description}</div>
-                <div className="tech-stack">
-                  {exp.techStack.map((tech, i) => (
-                    <span key={i} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
+                {/* Timeline Dot */}
+                <div className="timeline-dot"></div>
+
+                {/* Experience Card */}
+                <div className="experience-card">
+                  <h3>{exp.title}</h3>
+
+                  <div className="company">{exp.company}</div>
+
+                  <div className="date">{exp.date}</div>
+
+                  <div className="description">{exp.description}</div>
+
+                  <div className="tech-stack">
+                    {exp.techStack.map((tech, i) => (
+                      <span key={i} className="tech-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </motion.div>
             ))}
@@ -42,4 +56,5 @@ const Experience = () => {
     </section>
   );
 };
+
 export default Experience;

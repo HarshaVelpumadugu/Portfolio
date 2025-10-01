@@ -12,6 +12,61 @@
   font-family: Delius;
 }
 
+.experience-timeline {
+  position: relative;
+  padding-left: 2rem;
+  margin-top: 2rem;
+}
+
+.portfolio.light .timeline-line {
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #4666ff, #87ceeb);
+  opacity: 0.3;
+}
+
+.portfolio.dark .timeline-line {
+  position: absolute;
+  left: 0.5rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: hsl(45, 100%, 72%);
+  opacity: 0.3;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.portfolio.light .timeline-dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #4666ff;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.portfolio.dark .timeline-dot {
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: hsl(45, 100%, 72%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
 .experience-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

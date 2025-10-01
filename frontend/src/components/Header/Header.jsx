@@ -2,6 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, Sun, Moon, X } from "lucide-react";
+import logoImg from "../../assets/Portfolio-logo.png";
 import "./Header.css";
 
 const Header = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
@@ -26,9 +27,14 @@ const Header = ({ isDarkMode, toggleTheme, isMenuOpen, toggleMenu }) => {
         transition={{ duration: 0.6 }}
       >
         <div className="header-content">
-          <Link to="/" className="logo">
-            Harsha .
-          </Link>
+          <div className="logo-container">
+            <div className="logo-img-container">
+              <img className="logo-img" src={logoImg} />
+            </div>
+            <Link to="/" className="logo">
+              Harsha .
+            </Link>
+          </div>
 
           {/* Desktop Navigation */}
           <nav className="desktop-nav">

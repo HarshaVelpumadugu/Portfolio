@@ -51,6 +51,25 @@
   font-family: Delius;
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.logo-img-container {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  position: relative;
+}
+.logo-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
 /* Desktop Navigation */
 .desktop-nav {
   display: none;

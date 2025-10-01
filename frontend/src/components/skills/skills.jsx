@@ -34,8 +34,8 @@ const Skills = () => {
                     src={skill.img}
                     alt={skill.name}
                     style={{
-                      width: "60px",
-                      height: "60px",
+                      width: "50px",
+                      height: "50px",
                       objectFit: "contain",
                     }}
                   />

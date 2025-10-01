@@ -49,14 +49,14 @@
 
 .portfolio.light .project-card h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0rem;
   color: #4666ff;
   font-family: Delius;
 }
 
 .portfolio.dark .project-card h3 {
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin: 0rem;
   color: hsl(45, 54%, 58%);
   font-family: Delius;
 }
@@ -97,7 +97,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0 0.5rem;
 }
 
 .project-details-icon {

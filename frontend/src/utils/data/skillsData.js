@@ -2,58 +2,51 @@ import RenderLogo from "../../assets/RenderLogo.png";
 
 export const skillsData = [
   {
-    name: "Java",
-    color: "#f89820",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg",
+    name: "HTML",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg",
+  },
+  {
+    name: "CSS",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg",
   },
   {
     name: "JavaScript",
-    color: "#f7df1e",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg",
+  },
+  {
+    name: "Java",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg",
   },
   {
     name: "MongoDB",
-    color: "#47a248",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mongodb.svg",
   },
   {
     name: "Express.js",
-    color: "#000000",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/express.svg",
   },
   {
     name: "React.js",
-    color: "#61dafb",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg",
-  },
-  {
-    name: "Node.js",
-    color: "#339933",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/react.svg",
   },
   {
     name: "Postman API",
-    color: "#ff6c37",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/postman.svg",
   },
   {
     name: "MySQL",
-    color: "#4479a1",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg",
   },
   {
     name: "GitHub",
-    color: "#181717",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg",
   },
   {
     name: "VS Code",
-    color: "#424efbff",
-    img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg",
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg",
   },
   {
     name: "Render",
-    color: "#181717",
-    img: RenderLogo,
+    img: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/render.svg",
   },
 ];

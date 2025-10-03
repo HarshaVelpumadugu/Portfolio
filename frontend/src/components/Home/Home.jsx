@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Download } from "lucide-react";
 import "./Home.css";
 import CodingGif from "../../assets/AnimatedGif.gif";
-import myPic from "../../assets/mypic.jpg";
+import myPic from "../../assets/Portfolio-img.jpg";
 import myResume from "../../assets/Harsha's_Resume_Updated.pdf";
 
 const Home = () => {
